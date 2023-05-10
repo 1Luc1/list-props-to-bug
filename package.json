@@ -1,0 +1,29 @@
+{
+  "name": "list-props-to-bug",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@mdi/font": "7.2.96",
+    "core-js": "^3.30.2",
+    "roboto-fontface": "*",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6",
+    "vuetify": "^3.2.3",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.1",
+    "@mdi/js": "^7.2.96",
+    "eslint": "^8.40.0",
+    "eslint-plugin-vue": "^9.11.1",
+    "sass": "^1.62.1",
+    "vite": "^4.3.5",
+    "vite-plugin-vuetify": "^1.0.2"
+  }
+}
