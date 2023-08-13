@@ -3,8 +3,7 @@
     <v-responsive class="d-flex text-center fill-height">
       <v-row class="d-flex justify-center">
         <v-col cols="auto">
-          <v-list :items="items" density="compact" active-color="primary">
-          </v-list>
+          <v-list :items="items" density="compact" color="primary"> </v-list>
         </v-col>
         <v-col>
           <router-view v-slot="{ Component }">
@@ -19,12 +18,15 @@
 </template>
 
 <script setup>
+//import { useRoute } from 'vue-router';
+//const routeParams = { ...useRoute().params };
+
 const items = [
   {
     title: "Right View #1",
     props: {
       prependIcon: "$arrowRight",
-      //   to: { name: "Right", params: { id: 1 } },
+      // to: { name: "Right", params: routeParams },
       // switch this two lines to fix the problem
       to: { name: "Right" },
     },
@@ -33,7 +35,7 @@ const items = [
     title: "Right View #2",
     props: {
       prependIcon: "$arrowRight",
-      //   to: { name: "Right2", params: { id: 1 } },
+      // to: { name: "Right2", params: routeParams },
       // switch this two lines to fix the problem
       to: { name: "Right2" },
     },
